@@ -11,9 +11,10 @@ export default function Banner() {
       <S.TitleWrapper>
         <S.Subtitle>Menos Conversinha,</S.Subtitle>
 
-        <S.Title>Mais Conversão</S.Title>
-
-        <S.DetailImg src="/asset-header.png" />
+        <S.Title>
+          Mais Conversão
+          <S.DetailImg src="/asset-header.png" />
+        </S.Title>
       </S.TitleWrapper>
 
       <S.Description>

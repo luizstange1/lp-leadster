@@ -21,26 +21,43 @@ export const Title = styled.h1`
   color: ${(props) => props.theme.colors.buttonColor};
   font-size: ${(props) => props.theme.text.textXXXLG};
   border-bottom: 1px solid ${(props) => props.theme.colors["gray-300"]};
-  position: relative;
+  /* position: relative; */
   white-space: nowrap;
   background: ${(props) => props.theme.colors.titlecolor};
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+
+  @media (max-width: 650px) {
+    font-size: ${(props) => props.theme.text.textXXLG};
+  }
 `;
 
 export const DetailImg = styled.img`
-  position: absolute;
+  /* position: absolute;
   left: calc(50% - (-275px));
-  right: 30px;
   width: 50px;
-  top: 330px;
+  top: 330px; */
+  position: absolute;
+  right: -15px;
+  top: 15px;
+
+  @media (max-width: 650px) {
+    top: 5px;
+    right: -15px;
+    width: 40px;
+  }
 `;
 
 export const Subtitle = styled.h2`
   color: ${(props) => props.theme.colors["gray-600"]};
   font-size: ${(props) => props.theme.text.textXXLG};
   font-weight: 500;
+
+  @media (max-width: 650px) {
+    font-size: ${(props) => props.theme.text.textXLG};
+  }
 `;
 
 export const Tag = styled.span`
@@ -51,6 +68,10 @@ export const Tag = styled.span`
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.25rem 1rem 0.25rem 1rem;
+
+  @media (max-width: 650px) {
+    font-size: ${(props) => props.theme.text.textSM};
+  }
 `;
 
 export const Description = styled.p`
