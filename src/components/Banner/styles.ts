@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Banner = styled.div`
-  background-color: ${(props) => props.theme.colors.bannerColor};
+  background-color: ${(props) => props.theme.colors.bannerBackgroundColor};
   height: 32rem;
   display: flex;
   justify-content: center;
@@ -21,7 +21,6 @@ export const Title = styled.h1`
   color: ${(props) => props.theme.colors.buttonColor};
   font-size: ${(props) => props.theme.text.textXXXLG};
   border-bottom: 1px solid ${(props) => props.theme.colors["gray-300"]};
-  /* position: relative; */
   white-space: nowrap;
   background: ${(props) => props.theme.colors.titlecolor};
   -webkit-background-clip: text;
@@ -35,10 +34,6 @@ export const Title = styled.h1`
 `;
 
 export const DetailImg = styled.img`
-  /* position: absolute;
-  left: calc(50% - (-275px));
-  width: 50px;
-  top: 330px; */
   position: absolute;
   right: -15px;
   top: 15px;

@@ -1,7 +1,8 @@
 export const defaultTheme = {
   colors: {
     backgroundColor: "#FFF",
-    bannerColor: "#f0f8ff",
+    bannerBackgroundColor: "#f0f8ff",
+    adBackgroundColor: "#f0f8ff",
     buttonColor: "#0083ff",
     titlecolor:
       "-webkit-linear-gradient(45deg,rgba(44, 131, 251, 1) 0%, rgba(21, 118, 240, 1) 100%)",
@@ -20,6 +21,7 @@ export const defaultTheme = {
 
   text: {
     textSM: "0.75rem",
+    textNormal: "1rem",
     textMD: "1.25rem",
     textLG: "1.5rem",
     textXLG: "2rem",
